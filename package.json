@@ -1,0 +1,20 @@
+{
+  "name": "cache-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "method-override": "^2.3.10",
+    "mongoose": "^5.0.9",
+    "node-cache": "^4.1.1",
+    "nodemon": "^1.17.1",
+    "randomstring": "^1.1.5"
+  }
+}
