@@ -21,7 +21,7 @@ app.use(bodyParser.json())
 app.use(methodOverride('_method'))
 
 app.get('/', (req, res) => {
-    res.send('Hi, post /cache/new to create a new cache');
+    res.send('visit /cache/new to create a new cache');
 })
 
 app.post('/cache/new', (req, res) => {
@@ -59,8 +59,7 @@ app.post('/cache/new', (req, res) => {
 
 app.get('/cache/show/all', (req, res) => {
     mykeys = myCache.keys();
-    console.log("ok ok")
-    console.log(mykeys);
+
     Cache.find({})
         .then(caches => {
             res.send("status " + res.statusCode + " " + caches);
