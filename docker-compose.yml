@@ -1,0 +1,14 @@
+version: "2"
+services:
+  web:
+    image: docker-node-express-mongoapp
+    build: .
+    command: node app.js
+    ports:
+      - "2500:2500"
+    depends_on:
+      - "mongo"
+  mongo:
+    image: "mongo"
+    ports:
+      - "27017:27017"

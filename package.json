@@ -4,8 +4,10 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node app.js",
+    "test" : ""
   },
+  "repository": "https://github.com/didiloki/cache.git",
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -14,7 +16,6 @@
     "method-override": "^2.3.10",
     "mongoose": "^5.0.9",
     "node-cache": "^4.1.1",
-    "nodemon": "^1.17.1",
     "randomstring": "^1.1.5"
   }
 }
